@@ -1,6 +1,6 @@
 <?php
 
-	include('class/mysql_crud.php');
+	include('includes/actions.php');
 	global $sadb;
 	
 	$sadb->delete('test','id=5'); // Table name, WHERE conditions
