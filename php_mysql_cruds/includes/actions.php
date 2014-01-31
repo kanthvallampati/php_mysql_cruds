@@ -19,9 +19,9 @@ class Dbactions{
 	/* Function to make connection to database */
 	public function __construct(){
 		if(!$this->con){
-			$myconn = @mysql_connect($this->db_host,$this->db_user,$this->db_pass);  	// mysql_connect() with variables defined at the start of Database class
+			$myconn = mysql_connect($this->db_host,$this->db_user,$this->db_pass);  	// mysql_connect() with variables defined at the start of Database class
             if($myconn){
-            	$seldb = @mysql_select_db($this->db_name,$myconn); 						// Credentials have been pass through mysql_connect() now select the database
+            	$seldb = mysql_select_db($this->db_name,$myconn); 						// Credentials have been pass through mysql_connect() now select the database
                 if($seldb){
                 	$this->con = true;
                     return true;  														// Connection has been made return TRUE
@@ -41,7 +41,7 @@ class Dbactions{
 	/* Function to disconnect from the database */
     public function disconnect(){
     	if($this->con){
-    		if(@mysql_close()){															// We have found a connection, try to close it
+    		if(mysql_close()){															// We have found a connection, try to close it
     			$this->con = false;														// We have successfully closed the connection, set the connection variable to false
 				return true;
 			}else{
@@ -52,7 +52,7 @@ class Dbactions{
 	
 	/* Function to process an sql query */
 	public function sql($sql){
-		$query = @mysql_query($sql);
+		$query = mysql_query($sql);
         $this->myQuery = $sql; 															
 		if($query){																		// If the query returns >= 1 assign the number of rows to numResults
 			$this->numResults = mysql_num_rows($query);	
@@ -78,7 +78,7 @@ class Dbactions{
 	
 	/* Private function to check if table exists for use with queries */
 	private function tableExists($table){
-		$tablesInDb = @mysql_query('SHOW TABLES FROM '.$this->db_name.' LIKE "'.$table.'"');
+		$tablesInDb = mysql_query('SHOW TABLES FROM '.$this->db_name.' LIKE "'.$table.'"');
         if($tablesInDb){
         	if(mysql_num_rows($tablesInDb)==1){
                 return true; // The table exists
@@ -125,7 +125,7 @@ class Dbactions{
         $this->myQuery = $q; 
 		
         if($this->tableExists($table)){													// If the table exists
-        	$query = @mysql_query($q);
+        	$query = mysql_query($q);
 			if($query){																	// If the query returns >= 1 assign the number of rows to numResults
 				$this->numResults = mysql_num_rows($query);
 				while( $results[] = mysql_fetch_object($query));
@@ -152,7 +152,7 @@ class Dbactions{
 			$sql='UPDATE '.$table.' SET '.implode(',',$args).' WHERE '.$where;			// Create the query
 			
             $this->myQuery = $sql; 
-            if($query = @mysql_query($sql)){
+            if($query = mysql_query($sql)){
             	array_push($this->result,mysql_affected_rows());
             	return true; 															// Update has been successful
             }else{
@@ -174,7 +174,7 @@ class Dbactions{
                 $delete = 'DELETE FROM '.$table.' WHERE '.$where; 						// Create query to delete rows
             }
             
-            if($del = @mysql_query($delete)){
+            if($del = mysql_query($delete)){
             	array_push($this->result,mysql_affected_rows());
                 $this->myQuery = $delete; 
                 return true; 															// The query exectued correctly
