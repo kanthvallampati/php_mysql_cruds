@@ -95,7 +95,7 @@ class Dbactions{
     	 	$sql='INSERT INTO `'.$table.'` (`'.implode('`, `',array_keys($params)).'`) VALUES (\'' . implode('\', \'', $params) . '\')';
             $this->myQuery = $sql; 
             
-            if($ins = @mysql_query($sql)){
+            if($ins = mysql_query($sql)){
             	array_push($this->result,mysql_insert_id());
                 return true; 															// The data has been inserted
             }else{
