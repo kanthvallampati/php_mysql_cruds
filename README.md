@@ -1,9 +1,9 @@
 Description
-===============
+-----------
 A simple php class to connect the MySQL database and helper methods to Create, Read, Update, Delete, Import CSV and Export CSV oprations.
 
 Examples
-========
+--------
 Checkout the following examples:
 
 insert.php      - insert data into the database tables
