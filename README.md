@@ -18,4 +18,8 @@ csv_import.php  - import the CSV file data into the database table
 
 csv_export.php  - export the database table data in CSV file format
 
-
+Contribution
+------------
+Everyone is encouraged to help improve this project in following ways:
+- Suggest or add new features
+- Fix bugs and submit pull requests or Report bugs
