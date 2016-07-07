@@ -23,3 +23,8 @@ Contribution
 Everyone is encouraged to help improve this project in following ways:
 - Suggest or add new features
 - Fix bugs and submit pull requests or Report bugs
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/kanthvallampati/php_mysql_cruds/badge.svg?style=beer-square)](https://beerpay.io/kanthvallampati/php_mysql_cruds)  [![Beerpay](https://beerpay.io/kanthvallampati/php_mysql_cruds/make-wish.svg?style=flat-square)](https://beerpay.io/kanthvallampati/php_mysql_cruds?focus=wish)
