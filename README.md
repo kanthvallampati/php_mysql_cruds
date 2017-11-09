@@ -24,6 +24,11 @@ Everyone is encouraged to help improve this project in following ways:
 - Suggest or add new features
 - Fix bugs and submit pull requests or Report bugs
 
+License
+-------
+MIT
+
+
 ## Support on Beerpay
 Hey dude! Help me out for a couple of :beers:!
 
