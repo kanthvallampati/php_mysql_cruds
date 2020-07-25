@@ -21,5 +21,10 @@ Everyone is encouraged to help improve this project in following ways:
 - Suggest or add new features
 - Fix bugs and submit pull requests or Report bugs
 
+## Support
+Your support inspires & encourage us more. If you are interested to make a donation to us, please click the below PayPal button.
+[![PayPal.me](https://img.shields.io/badge/paypal-donate-119fde.svg)](https://www.paypal.me/LakshmikanthV)
+
+
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
