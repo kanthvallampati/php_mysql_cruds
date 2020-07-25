@@ -22,4 +22,4 @@ Everyone is encouraged to help improve this project in following ways:
 - Fix bugs and submit pull requests or Report bugs
 
 ## License
-MIT
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
