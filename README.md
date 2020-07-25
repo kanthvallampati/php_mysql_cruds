@@ -23,6 +23,7 @@ Everyone is encouraged to help improve this project in following ways:
 
 ## Support
 Your support inspires & encourage us more. If you are interested to make a donation to us, please click the below PayPal button.
+
 [![PayPal.me](https://img.shields.io/badge/paypal-donate-119fde.svg)](https://www.paypal.me/LakshmikanthV)
 
 
